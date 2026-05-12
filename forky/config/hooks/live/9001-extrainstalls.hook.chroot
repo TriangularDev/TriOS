@@ -3,5 +3,7 @@ set -e
 
 apt update
 
-apt install -y --install-recommends steam linux-image-liquorix-amd64 linux-headers-liquorix-amd64
+dpkg --add-architecture i386
+
+apt install -y --install-recommends steam-installer linux-image-liquorix-amd64 linux-headers-liquorix-amd64
 
