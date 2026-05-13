@@ -16,6 +16,9 @@ color-scheme='prefer-dark'
 picture-uri='file:///usr/share/backgrounds/TriOS/TriOS.svg'
 picture-uri-dark='file:///usr/share/backgrounds/TriOS/TriOS.svg'
 picture-options='zoom'
+
+[org/x/apps/portal]
+color-scheme='prefer-dark'
 EOF
 
 mkdir -p /etc/dconf/profile
