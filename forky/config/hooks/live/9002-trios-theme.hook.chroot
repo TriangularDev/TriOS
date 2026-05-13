@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -e
+
+mkdir -p /etc/dconf/db/local.d
+
+cat > /etc/dconf/db/local.d/00-trios-theme <<'EOF'
+[org/cinnamon/theme]
+name='TriOS-Orchis-Dark'
+
+[org/cinnamon/desktop/interface]
+gtk-theme='TriOS-Orchis-Dark'
+icon-theme='TriOS-Slot-Dark'
+EOF
+
+mkdir -p /etc/dconf/profile
+
+cat > /etc/dconf/profile/user <<'EOF'
+user-db:user
+system-db:local
+EOF
+
+dconf update
