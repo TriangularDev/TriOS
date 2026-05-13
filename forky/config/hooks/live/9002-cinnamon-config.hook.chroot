@@ -10,6 +10,7 @@ name='TriOS-Orchis-Dark'
 [org/cinnamon/desktop/interface]
 gtk-theme='TriOS-Orchis-Dark'
 icon-theme='TriOS-Slot-Dark'
+color-scheme='prefer-dark'
 
 [org/cinnamon/desktop/background]
 picture-uri='file:///usr/share/backgrounds/TriOS/TriOS.svg'
@@ -24,4 +25,4 @@ user-db:user
 system-db:local
 EOF
 
-dconf update
+dconf update   
