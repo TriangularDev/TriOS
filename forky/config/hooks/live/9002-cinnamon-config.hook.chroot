@@ -10,6 +10,11 @@ name='TriOS-Orchis-Dark'
 [org/cinnamon/desktop/interface]
 gtk-theme='TriOS-Orchis-Dark'
 icon-theme='TriOS-Slot-Dark'
+
+[org/cinnamon/desktop/background]
+picture-uri='file:///usr/share/backgrounds/TriOS/TriOS.svg'
+picture-uri-dark='file:///usr/share/backgrounds/TriOS/TriOS.svg'
+picture-options='zoom'
 EOF
 
 mkdir -p /etc/dconf/profile
