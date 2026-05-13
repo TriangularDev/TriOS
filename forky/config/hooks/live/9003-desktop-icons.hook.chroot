@@ -6,7 +6,7 @@ mkdir -p /etc/skel/Desktop
 cd /etc/skel/Desktop
 
 cp /usr/share/applications/firefox-esr.desktop ./
-cp /usr/share/applications/steam.desktop ./
+# cp /usr/share/applications/steam.desktop ./
 cp /usr/share/applications/org.gnome.Software.desktop ./
 cp /usr/share/applications/nemo.desktop ./
 
