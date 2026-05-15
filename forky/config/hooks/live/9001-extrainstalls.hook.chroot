@@ -45,7 +45,7 @@ apt install -y --install-recommends --install-suggests \
 	mangohud \
 	gamescope \
 	inxi \
-	winehq-staging
+	winehq-staging \
 	firefox # Install set of default apps
 
 curl -s https://liquorix.net/install-liquorix.sh | sudo bash # Install liquorix kernel
