@@ -46,7 +46,7 @@ LB_INITRAMFS="live-boot"
 LB_INITRAMFS_COMPRESSION="gzip"
 
 # Set init system
-LB_INITSYSTEM="systemd"
+LB_INITSYSTEM="none"
 
 # Set distribution mode
 LB_MODE="debian"
