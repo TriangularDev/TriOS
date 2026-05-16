@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
+mv /etc/os-release /etc/os-release.old
+
 cp /etc/trios/os-release /etc/os-release
