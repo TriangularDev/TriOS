@@ -48,6 +48,8 @@ apt install -y --install-recommends \
 	winehq-staging \
 	firefox # Install set of default apps
 
+sudo apt purge firefox-esr
+
 curl -s https://liquorix.net/install-liquorix.sh | sudo bash # Install liquorix kernel
 
 apt upgrade
