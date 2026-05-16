@@ -11,9 +11,9 @@ wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo gpg --dearmor -o /
 
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/forky/winehq-forky.sources # Add Wine sources (thank you for supporting Forky natively)
 
-apt update # Pull from updated software repositories
+apt-get update # Pull from updated software repositories
 
-apt install -y --install-recommends \
+apt-get install -y --install-recommends \
 	mesa-vulkan-drivers \
 	mesa-vulkan-drivers:i386 \
 	libgl1-mesa-dri \
@@ -48,8 +48,8 @@ apt install -y --install-recommends \
 	winehq-staging \
 	firefox # Install set of default apps
 
-sudo apt purge firefox-esr
+sudo apt-get purge firefox-esr
 
 curl -s https://liquorix.net/install-liquorix.sh | sudo bash # Install liquorix kernel
 
-apt upgrade
+apt-get upgrade
