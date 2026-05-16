@@ -1,0 +1,3 @@
+# preload (currently unavailable due to RC bug in Forky)
+systemd-zram-generator
+zram-tools
