@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
+dpkg-divert --divert /etc/os-release-old /etc/os-release
+
+cp /etc/trios/os-release /etc/os-release
