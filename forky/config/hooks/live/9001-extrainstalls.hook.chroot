@@ -46,9 +46,8 @@ apt-get install -y --install-recommends \
 	gamescope \
 	inxi \
 	winehq-staging \
+	firefox-esr \
 	firefox # Install set of default apps
-
-sudo apt-get purge firefox-esr
 
 curl -s https://liquorix.net/install-liquorix.sh | sudo bash # Install liquorix kernel
 
