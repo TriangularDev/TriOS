@@ -28,6 +28,14 @@ xargs -r apt-get purge -y < /etc/trios/extras.list
 
 apt-get autoremove -y --purge
 
+cd /etc/trios/
+
+git clone https://github.com/TriangularDev/TriOS.git
+
+apt-get install TriOS/forky/config/packages/* -y
+
+rm -fr TriOS
+
 rm -f /etc/apt/sources.list
 rm -rf /etc/apt/sources.list.d
 
