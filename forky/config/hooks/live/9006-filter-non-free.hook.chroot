@@ -12,9 +12,11 @@ s/[[:space:]]+non-free//g
 s/[[:space:]]+main.*/ main/g
 ' > /etc/apt/sources.list
 
-cp /etc/apt/sources.list.d.old/liquorix.list /etc/apt/sources.list.d/ 2>/dev/null || true
-cp /etc/apt/sources.list.d.old/mozilla.list /etc/apt/sources.list.d/ 2>/dev/null || true
-cp /etc/apt/sources.list.d.old/winehq-forky.sources /etc/apt/sources.list.d/ 2>/dev/null || true
+mkdir /etc/apt/sources.list.d/
+
+cp /etc/apt/sources.list.d.old/liquorix.list /etc/apt/sources.list.d/
+cp /etc/apt/sources.list.d.old/mozilla.list /etc/apt/sources.list.d/
+cp /etc/apt/sources.list.d.old/winehq-forky.sources /etc/apt/sources.list.d/
 
 apt-get update
 
