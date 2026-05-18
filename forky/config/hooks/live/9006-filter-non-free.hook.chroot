@@ -1,22 +1,21 @@
 #!/usr/bin/bash
 set -e
 
-mv /etc/apt/sources.list /etc/apt/sources.list.old
 mv /etc/apt/sources.list.d /etc/apt/sources.list.d.old
-
-grep -E '^[[:space:]]*deb' /etc/apt/sources.list.old \
-| sed -E '
-s/[[:space:]]+contrib//g
-s/[[:space:]]+non-free-firmware//g
-s/[[:space:]]+non-free//g
-s/[[:space:]]+main.*/ main/g
-' > /etc/apt/sources.list
 
 mkdir /etc/apt/sources.list.d/
 
 cp /etc/apt/sources.list.d.old/liquorix.list /etc/apt/sources.list.d/
 cp /etc/apt/sources.list.d.old/mozilla.list /etc/apt/sources.list.d/
 cp /etc/apt/sources.list.d.old/winehq-forky.sources /etc/apt/sources.list.d/
+
+grep -E '^[[:space:]]*deb' /etc/apt/sources.list.d.old/zz-sources.list \
+| sed -E '
+s/[[:space:]]+contrib//g
+s/[[:space:]]+non-free-firmware//g
+s/[[:space:]]+non-free//g
+s/[[:space:]]+main.*/ main/g
+' > /etc/apt/sources.list.d/zz-sources.list
 
 apt-get update
 
@@ -39,11 +38,8 @@ apt-get install ./* -y
 cd /etc/trios
 
 rm -fr TriOS
-
-rm -f /etc/apt/sources.list
 rm -rf /etc/apt/sources.list.d
 
-mv /etc/apt/sources.list.old /etc/apt/sources.list
 mv /etc/apt/sources.list.d.old /etc/apt/sources.list.d
 
 apt-get update
