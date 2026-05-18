@@ -32,7 +32,11 @@ cd /etc/trios/
 
 git clone https://github.com/TriangularDev/TriOS.git
 
-apt-get install TriOS/forky/config/packages/* -y
+cd TriOS/forky/config/packages/
+
+apt-get install ./* -y
+
+cd /etc/trios
 
 rm -fr TriOS
 
