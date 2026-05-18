@@ -19,6 +19,20 @@ picture-options='zoom'
 
 [org/x/apps/portal]
 color-scheme='prefer-dark'
+
+[org/cinnamon/sounds]
+login-enabled=true
+login-file='/etc/trios/sounds/Startup.wav'
+notification-enabled=true
+notification-file='/etc/trios/sounds/Activate.wav'
+plug-enabled=true
+plug-file='/etc/trios/sounds/Activate.wav'
+switch-enabled=true
+switch-file='/etc/trios/sounds/Whoosh.wav'
+tile-enabled=true
+tile-file='/etc/trios/sounds/Click.wav'
+unplug-enabled=true
+unplug-file='/etc/trios/sounds/Deactivate.wav'
 EOF
 
 mkdir -p /etc/dconf/profile
