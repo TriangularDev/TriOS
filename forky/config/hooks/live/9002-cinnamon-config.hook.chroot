@@ -34,7 +34,7 @@ tile-file='/etc/trios/sounds/Click.wav'
 unplug-enabled=true
 unplug-file='/etc/trios/sounds/Deactivate.wav'
 maximize-enabled=true
-maximize-file='/home/lucas/Documents/Dev/TriOS/forky/config/includes.chroot_after_packages/etc/trios/sounds/Click.wav'
+maximize-file='/etc/trios/sounds/Click.wav'
 EOF
 
 mkdir -p /etc/dconf/profile
